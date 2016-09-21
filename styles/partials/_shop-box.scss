@@ -1,0 +1,95 @@
+div.shop-box {
+    border-top: 3px solid $color;
+    height: 50px;
+    transition: height 0.5s ease;
+
+    ul.icons {
+        padding-left: 0;
+        width: 100%;
+
+        li.icons {
+            list-style: none;
+            float: left;
+            height: auto;
+            line-height: 50px;
+            width: 20%;
+            border-left: 3px solid $color;
+            text-align: center;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &:hover {
+                background: $color;
+                color: #fff;
+            }
+
+            i.fa {
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0 auto;
+            }
+        }
+
+        p.icons {
+            font-size: 18px;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 50px;
+        }
+    }
+}
+
+div.main.square {
+    margin: 10px auto;
+    border: 3px solid #fff;
+
+    &#product1-square {
+        background: #82BBE4;
+    }
+
+    &#product2-square {
+        background: #d583ac;
+    }
+
+    &#product3-square {
+        background: #deb17e;
+    }
+
+    &#product4-square {
+        background: #800000;
+    }
+
+    &#product5-square {
+        background: #00ffff;
+    }
+
+    &#product6-square {
+        background: #000080;
+    }
+
+    &#product7-square {
+        background: #B57EDC;
+    }
+
+    &#product8-square {
+        background: #71EEB8;
+    }
+
+    &#product9-square {
+        background: #33FF46;
+    }
+
+    &#product10-square {
+        background: #FF5733;
+    }
+
+    &#product11-square {
+        background: #581845;
+    }
+
+    &#product12-square {
+        background: #FF33B2;
+    }
+}

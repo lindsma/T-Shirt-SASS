@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box; }
 
 body {
@@ -10,21 +10,17 @@ nav div.menu {
   height: 50px; }
 nav ul {
   float: right; }
-  nav ul li {
-    float: left; }
-
-li.menu {
-  padding-right: 30px; }
-
-li.menu:last-child {
-  padding-right: 40px; }
-
-a {
+  nav ul.menu {
+    list-style: none; }
+nav li {
+  float: left; }
+  nav li.menu {
+    padding: 20px 30px 0 0; }
+    nav li.menu:last-child {
+      padding-right: 40px; }
+nav a {
   text-decoration: none;
   color: #fff; }
-
-ul.menu {
-  list-style: none; }
 
 ul.products {
   float: left;
@@ -32,365 +28,275 @@ ul.products {
   padding: 20px 10px;
   margin: 0 auto;
   transition: width .5s ease; }
+  ul.products li.products {
+    list-style: none;
+    margin: 0 auto;
+    position: relative;
+    border: 3px solid #5ca4d6; }
+  ul.products li img.t-shirt-front {
+    width: 81%;
+    opacity: 0.90;
+    height: auto;
+    margin: 30px 0 30px 25px;
+    position: relative;
+    z-index: 2; }
+  ul.products li i.fa.fa-undo {
+    border-left: 3px solid #5ca4d6;
+    border-bottom: 3px solid #5ca4d6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 7px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto; }
+    ul.products li i.fa.fa-undo:hover {
+      background: #5ca4d6;
+      color: #fff; }
+    ul.products li i.fa.fa-undo p {
+      text-indent: -9999px;
+      padding: 0;
+      margin: 0;
+      height: 0;
+      width: 0; }
 
-li.products {
-  list-style: none;
-  margin: 0 auto;
-  position: relative;
-  border: 3px solid #5ca4d6; }
-
-i.fa.fa-undo {
-  border-left: 3px solid #5ca4d6;
-  border-bottom: 3px solid #5ca4d6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px 7px;
-  overflow: hidden; }
-
-i.fa p {
-  text-indent: -9999px;
-  padding: 0;
-  margin: 0;
-  height: 0;
-  width: 0; }
-
-img.t-shirt-front {
-  width: 81%;
-  opacity: 0.90;
-  height: auto;
-  margin: 30px 0 30px 25px;
-  position: relative;
-  z-index: 2; }
-
-/*
-
-Shop box elements
-
-*/
 div.shop-box {
   border-top: 3px solid #5ca4d6;
   height: 50px;
-  transition: height .5s ease; }
+  transition: height 0.5s ease; }
+  div.shop-box ul.icons {
+    padding-left: 0;
+    width: 100%; }
+    div.shop-box ul.icons li.icons {
+      list-style: none;
+      float: left;
+      height: auto;
+      line-height: 50px;
+      width: 20%;
+      border-left: 3px solid #5ca4d6;
+      text-align: center; }
+      div.shop-box ul.icons li.icons:first-child {
+        border-left: none; }
+      div.shop-box ul.icons li.icons:hover {
+        background: #5ca4d6;
+        color: #fff; }
+      div.shop-box ul.icons li.icons i.fa {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 auto; }
+    div.shop-box ul.icons p.icons {
+      font-size: 18px;
+      margin: 0 auto;
+      padding: 0;
+      line-height: 50px; }
 
-ul.icons {
-  padding-left: 0;
-  width: 100%; }
-
-p.icons {
-  font-size: 18px;
-  margin: 0 auto;
-  padding: 0;
-  line-height: 50px; }
-
-li.icons {
-  list-style: none;
-  float: left;
-  height: auto;
-  line-height: 50px;
-  width: 20%;
-  border-left: 3px solid #5ca4d6;
-  text-align: center; }
-
-li.icons:first-child {
-  border-left: none; }
-
-li.icons:hover,
-i.fa-undo:hover {
-  background: #5ca4d6;
-  color: #fff; }
-
-p {
-  padding-left: 30%; }
-
-i.fa {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0 auto; }
-
-.main.square {
+div.main.square {
   margin: 10px auto;
   border: 3px solid #fff; }
-
-#product1-square {
-  background: #82BBE4; }
-
-#product2-square {
-  background: #d583ac; }
-
-#product3-square {
-  background: #deb17e; }
-
-#product4-square {
-  background: #800000; }
-
-#product5-square {
-  background: #00ffff; }
-
-#product6-square {
-  background: #000080; }
-
-#product7-square {
-  background: #B57EDC; }
-
-#product8-square {
-  background: #71EEB8; }
-
-#product9-square {
-  background: #33FF46; }
-
-#product10-square {
-  background: #FF5733; }
-
-#product11-square {
-  background: #581845; }
-
-#product12-square {
-  background: #FF33B2; }
-
-li.shirt-colors,
-li.shirt-sizes {
-  list-style: none; }
-
-/*
-
-Shirt sizes menu
-
-*/
-li.shirt-sizes {
-  position: relative;
-  display: inline-block; }
-
-li.shirt-sizes:hover div.shirt-sizes {
-  opacity: 1;
-  top: -163px;
-  z-index: 5; }
-
-div.shirt-sizes {
-  border: 3px solid #5ca4d6;
-  background: #fff;
-  width: 70px;
-  position: absolute;
-  opacity: 0;
-  top: -183px;
-  left: -8px;
-  z-index: -1;
-  transition: all .3s ease-in-out; }
-
-.icon-t-shirt {
-  color: #5ca4d6; }
-
-li.triangle {
-  line-height: 30px;
-  list-style: none; }
-
-span.white-triangle-shirt-sizes {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 11px 9.5px 0 9.5px;
-  border-color: #fff transparent transparent transparent;
-  position: absolute;
-  z-index: 1;
-  bottom: -10px;
-  left: 23px; }
-
-span.blue-triangle-shirt-sizes {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 10.5px 0 10.5px;
-  border-color: #5ca3d6 transparent transparent transparent;
-  position: absolute;
-  bottom: -15px;
-  left: 22px; }
-
-li.icons.shirt-sizes {
-  line-height: 30px; }
-
-p.x-large, p.large, p.medium, p.small {
-  margin: 0 auto; }
-
-p.x-large {
-  padding-top: 10px; }
-
-p.large, p.medium, p.small {
-  padding-top: 3px; }
-
-p.shirt-sizes {
-  position: relative;
-  padding-left: 0; }
-
-.shirt-text-x-large {
-  font-size: 10px;
-  position: absolute;
-  top: 18px;
-  left: 20px; }
-
-.shirt-text-large {
-  font-size: 10px;
-  position: absolute;
-  top: 7px;
-  left: 20px; }
-
-.shirt-text-medium {
-  font-size: 10px;
-  position: absolute;
-  top: 5px;
-  left: 15px; }
-
-.shirt-text-small {
-  font-size: 10px;
-  position: absolute;
-  top: 6px;
-  left: 12px; }
-
-.icon-x-large, .icon-large, .icon-medium, .icon-small {
-  line-height: 25px; }
-
-.icon-x-large {
-  font-size: 37px;
-  margin: 0; }
-
-.icon-large {
-  font-size: 32px; }
-
-.icon-medium {
-  font-size: 27px; }
-
-.icon-small {
-  font-size: 22px; }
-
-ul.shirt-sizes {
-  padding: 0; }
-
-/*
-
-Shirt colors menu
-
-*/
-li.shirt-colors {
-  position: relative;
-  display: inline-block;
-  line-height: 30px; }
-
-div.color-menu {
-  padding-left: 1px; }
-
-li.icons.shirt-colors:hover div.shirt-colors {
-  opacity: 1;
-  top: -89px;
-  z-index: 5; }
-
-div.shirt-colors {
-  border: 3px solid #5ca4d6;
-  background: #fff;
-  opacity: 0;
-  width: 80px;
-  position: absolute;
-  top: -114px;
-  left: -13px;
-  z-index: -1;
-  transition: all .3s ease-in; }
-
-span.white-triangle-shirt-colors {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 11px 9.5px 0 9.5px;
-  border-color: #fff transparent transparent transparent;
-  position: absolute;
-  z-index: 1;
-  bottom: -10px;
-  left: 29px; }
-
-span.blue-triangle-shirt-colors {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 10.5px 0 10.5px;
-  border-color: #5ca3d6 transparent transparent transparent;
-  position: absolute;
-  bottom: -15px;
-  left: 28px; }
-
-li.shirt-colors:first-child {
-  padding-top: 7px; }
+  div.main.square#product1-square {
+    background: #82BBE4; }
+  div.main.square#product2-square {
+    background: #d583ac; }
+  div.main.square#product3-square {
+    background: #deb17e; }
+  div.main.square#product4-square {
+    background: #800000; }
+  div.main.square#product5-square {
+    background: #00ffff; }
+  div.main.square#product6-square {
+    background: #000080; }
+  div.main.square#product7-square {
+    background: #B57EDC; }
+  div.main.square#product8-square {
+    background: #71EEB8; }
+  div.main.square#product9-square {
+    background: #33FF46; }
+  div.main.square#product10-square {
+    background: #FF5733; }
+  div.main.square#product11-square {
+    background: #581845; }
+  div.main.square#product12-square {
+    background: #FF33B2; }
 
 ul.shirt-colors {
   padding: 0;
-  height: 83px; }
+  height: 76px;
+  width: 100%;
+  overflow: hidden; }
+ul.shirt-sizes {
+  padding: 0;
+  width: 100%;
+  height: 200px; }
+  ul.shirt-sizes p {
+    line-height: 35px; }
 
-.square {
+li.shirt-colors {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+  float: left;
+  width: 50%; }
+  li.shirt-colors div.submenu.square {
+    margin: 14% auto 0 auto; }
+  li.shirt-colors:hover div.shirt-colors {
+    opacity: 1;
+    top: -82px;
+    z-index: 5; }
+  li.shirt-colors div.shirt-colors {
+    border: 3px solid #5ca4d6;
+    background: #fff;
+    opacity: 0;
+    width: 150%;
+    position: absolute;
+    top: -114px;
+    left: -25%;
+    z-index: -1;
+    transition: all 0.3s ease-in; }
+  li.shirt-colors span.white-triangle-shirt-colors {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 9.5px 0 9.5px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    left: 37%; }
+  li.shirt-colors span.blue-triangle-shirt-colors {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 10.5px 0 10.5px;
+    border-color: #5ca3d6 transparent transparent transparent;
+    position: absolute;
+    bottom: -15px;
+    left: 36%; }
+li.shirt-sizes {
+  list-style: none;
+  position: relative;
+  display: inline-block; }
+  li.shirt-sizes p.shirt-sizes {
+    position: relative; }
+  li.shirt-sizes p.x-large {
+    padding-top: 10px; }
+  li.shirt-sizes .icon-t-shirt {
+    color: #5ca4d6; }
+  li.shirt-sizes .shirt-text-large,
+  li.shirt-sizes .shirt-text-medium,
+  li.shirt-sizes .shirt-text-small,
+  li.shirt-sizes .shirt-text-x-large {
+    font-size: 10px;
+    position: absolute; }
+  li.shirt-sizes .shirt-text-x-large {
+    top: 18px;
+    left: 20px; }
+  li.shirt-sizes .shirt-text-large {
+    top: 7px;
+    left: 20px; }
+  li.shirt-sizes .shirt-text-medium {
+    top: 5px;
+    left: 15px; }
+  li.shirt-sizes .shirt-text-small {
+    top: 6px;
+    left: 12px; }
+  li.shirt-sizes .icon-large,
+  li.shirt-sizes .icon-medium,
+  li.shirt-sizes .icon-small,
+  li.shirt-sizes .icon-x-large {
+    line-height: 25px; }
+  li.shirt-sizes .icon-x-large {
+    font-size: 37px;
+    margin: 0; }
+  li.shirt-sizes .icon-large {
+    font-size: 32px; }
+  li.shirt-sizes .icon-medium {
+    font-size: 27px; }
+  li.shirt-sizes .icon-small {
+    font-size: 22px; }
+  li.shirt-sizes:hover div.shirt-sizes {
+    opacity: 1;
+    top: -206px;
+    z-index: 5; }
+  li.shirt-sizes div.shirt-sizes {
+    border: 3px solid #5ca4d6;
+    background: #fff;
+    width: 70px;
+    position: absolute;
+    opacity: 0;
+    top: -226px;
+    left: -8px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out; }
+  li.shirt-sizes .triangle {
+    line-height: 30px;
+    list-style: none; }
+    li.shirt-sizes .triangle span.white-triangle-shirt-sizes {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 9.5px 0 9.5px;
+      border-color: #fff transparent transparent transparent;
+      position: absolute;
+      z-index: 1;
+      bottom: -10px;
+      left: 23px; }
+    li.shirt-sizes .triangle span.blue-triangle-shirt-sizes {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 13px 10.5px 0 10.5px;
+      border-color: #5ca3d6 transparent transparent transparent;
+      position: absolute;
+      bottom: -15px;
+      left: 22px; }
+li .square {
   width: 30px;
   height: 30px; }
-
-.blue {
-  background: #82BBE4; }
-
-.pink {
-  background: #d583ac; }
-
-.yellow {
-  background: #deb17e; }
-
-.green {
-  background: #8bb992; }
-
-.navy {
-  background: #000080; }
-
-.maroon {
-  background: #800000; }
-
-.cyan {
-  background: #00ffff; }
-
-.canary-yellow {
-  background: #ffef00; }
-
-.lavender {
-  background: #B57EDC; }
-
-.seafoam-green {
-  background: #71EEB8; }
-
-.bright-green {
-  background: #33FF46; }
-
-.eggplant {
-  background: #581845; }
-
-.orange {
-  background: #FF5733; }
-
-.bright-pink {
-  background: #FF33B2; }
-
-/*
-
-Bottom product info - name & product-price
-
-*/
-li.product-name-price {
-  list-style: none; }
+  li .square.blue {
+    background: #82BBE4; }
+  li .square.pink {
+    background: #d583ac; }
+  li .square.yellow {
+    background: #deb17e; }
+  li .square.green {
+    background: #8bb992; }
+  li .square.navy {
+    background: #000080; }
+  li .square.maroon {
+    background: #800000; }
+  li .square.cyan {
+    background: #00ffff; }
+  li .square.canary-yellow {
+    background: #ffef00; }
+  li .square.lavender {
+    background: #B57EDC; }
+  li .square.seafoam-green {
+    background: #71EEB8; }
+  li .square.bright-green {
+    background: #33FF46; }
+  li .square.eggplant {
+    background: #581845; }
+  li .square.orange {
+    background: #FF5733; }
+  li .square.bright-pink {
+    background: #FF33B2; }
 
 ul.product-name-price {
   padding: 0;
   margin: 0; }
-
-li.product-name,
-li.product-price {
+ul li.product-name-price {
+  list-style: none; }
+ul li.product-name, ul li.product-price {
   list-style: none;
   padding-top: 10px;
   font-size: 21px;
   font-family: "avenir"; }
-
-li.product-name {
+ul li.product-name {
   float: left;
   padding-left: 5px; }
-
-li.product-price {
+ul li.product-price {
   float: right;
   font-weight: bold;
   padding-right: 5px; }
@@ -410,68 +316,50 @@ li.product-price {
   ul.products {
     width: 50%; }
 
-  li.product-name,
-  li.product-price {
+  li.product-name, li.product-price {
     font-size: 20px; } }
 @media only screen and (max-width: 450px) {
   body {
     width: 100%;
     height: auto; }
+    body nav {
+      display: none; }
 
   ul.products {
     width: 50%;
     padding: 10px; }
-
-  li.product-name,
-  li.product-price {
-    font-size: 16px;
-    padding: 0;
-    width: 100%; }
-
-  .square {
-    width: 22px;
-    height: 22px; }
-
-  i.fa {
-    font-size: 18px; }
-
-  p.icons {
-    font-size: 16px; }
-
-  p.icons, li.icons {
-    line-height: 40px; }
-
-  div.shop-box {
-    height: 120px; }
-
-  nav {
-    display: none; }
-
-  img.t-shirt-front {
-    width: 81%;
-    height: auto;
-    margin: 30px 10px 15px 10px; }
-
-  ul.icons {
-    width: 100%; }
-
-  li.icons {
-    list-style: none;
-    float: left;
-    height: 40px;
-    width: 50%;
-    display: block;
-    border: none;
-    border-bottom: 3px solid #5ca4d6;
-    padding: 0;
-    margin: 0; }
-
-  li.icons:first-child,
-  li.icons:nth-child(3) {
-    border-right: 3px solid #5ca4d6; }
-
-  li.icons:nth-child(5) {
-    width: 100%;
-    border-bottom: none; } }
+    ul.products li.product-name, ul.products li.product-price {
+      font-size: 16px;
+      padding: 0;
+      width: 100%; }
+    ul.products li.products img.t-shirt-front {
+      width: 81%;
+      height: auto;
+      margin: 30px 10px 15px; }
+    ul.products li.products div.shop-box {
+      height: 120px; }
+    ul.products ul.icons {
+      width: 100%; }
+      ul.products ul.icons li.icons {
+        list-style: none;
+        height: 40px;
+        display: block;
+        width: 50%;
+        border: none;
+        padding: 0 auto 10px auto;
+        margin: 0 auto;
+        font-size: 18px; }
+        ul.products ul.icons li.icons:nth-child(1), ul.products ul.icons li.icons:nth-child(2) {
+          border-bottom: 3px solid #5ca4d6;
+          line-height: 40px; }
+        ul.products ul.icons li.icons:nth-child(2), ul.products ul.icons li.icons:nth-child(4) {
+          border-left: 3px solid #5ca4d6; }
+        ul.products ul.icons li.icons:nth-child(5) {
+          width: 100%;
+          border-top: 3px solid #5ca4d6;
+          border-left: none;
+          line-height: 40px; }
+          ul.products ul.icons li.icons:nth-child(5) p.icons {
+            line-height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

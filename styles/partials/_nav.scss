@@ -1,0 +1,29 @@
+nav {
+  div.menu {
+    background: #333;
+    height: 50px;
+  }
+  ul {
+    float: right;
+
+    &.menu {
+      list-style: none;
+    }
+  }
+
+  li {
+      float: left;
+
+      &.menu {
+        padding: 20px 30px 0 0;
+
+        &:last-child {
+          padding-right: 40px;
+        }
+      }
+    }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}

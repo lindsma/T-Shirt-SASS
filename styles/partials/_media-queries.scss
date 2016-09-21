@@ -1,0 +1,100 @@
+@include media(desktop) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    ul.products {
+        width: 33%;
+    }
+}
+@include media(tablet) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    ul.products {
+        width: 50%;
+    }
+
+    li {
+        &.product-name,
+        &.product-price {
+            font-size: 20px;
+        }
+    }
+}
+@include media(mobile) {
+    body {
+        width: 100%;
+        height: auto;
+
+        nav {
+            display: none;
+        }
+    }
+
+    ul.products {
+        width: 50%;
+        padding: 10px;
+
+        li {
+            &.product-name,
+            &.product-price {
+                font-size: 16px;
+                padding: 0;
+                width: 100%;
+            }
+
+            &.products {
+                img.t-shirt-front {
+                    width: 81%;
+                    height: auto;
+                    margin: 30px 10px 15px;
+                }
+
+                div.shop-box {
+                    height: 120px;
+                }
+            }
+        }
+
+        ul.icons {
+            width: 100%;
+
+                li.icons {
+                    list-style: none;
+                    height: 40px;
+                    display: block;
+                    width: 50%;
+                    border: none;
+                    padding: 0 auto 10px auto;
+                    margin: 0 auto;
+                    font-size: 18px;
+
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                      border-bottom: 3px solid $color;
+                      line-height: 40px;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(4) {
+                      border-left: 3px solid $color;
+                    }
+
+                    &:nth-child(5) {
+                        width: 100%;
+                        border-top: 3px solid $color;
+                        border-left: none;
+                        line-height: 40px;
+
+                    p.icons {
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,251 @@
+ul {
+    &.shirt-colors {
+        padding: 0;
+        height: 76px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &.shirt-sizes {
+        padding: 0;
+        width: 100%;
+        height: 200px;
+
+        p {
+          line-height: 35px;
+        }
+    }
+}
+
+li {
+    &.shirt-colors {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+        line-height: 30px;
+        float: left;
+        width: 50%;
+
+        div.submenu.square {
+          margin: 14% auto 0 auto;
+        }
+
+        &:hover div.shirt-colors {
+            opacity: 1;
+            top: -82px;
+            z-index: 5;
+        }
+
+        div.shirt-colors {
+            border: 3px solid $color;
+            background: #fff;
+            opacity: 0;
+            width: 150%;
+            position: absolute;
+            top: -114px;
+            left: -25%;
+            z-index: -1;
+            transition: all 0.3s ease-in;
+        }
+
+        span.white-triangle-shirt-colors {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 11px 9.5px 0 9.5px;
+            border-color: #fff transparent transparent transparent;
+            position: absolute;
+            z-index: 1;
+            bottom: -10px;
+            left: 37%;
+        }
+
+        span.blue-triangle-shirt-colors {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 13px 10.5px 0 10.5px;
+            border-color: #5ca3d6 transparent transparent transparent;
+            position: absolute;
+            bottom: -15px;
+            left: 36%;
+        }
+    }
+
+    &.shirt-sizes {
+        list-style: none;
+        position: relative;
+        display: inline-block;
+
+        p.shirt-sizes {
+          position: relative;
+        }
+
+        p.x-large {
+          padding-top: 10px;
+        }
+
+        .icon-t-shirt {
+            color: $color;
+        }
+
+        .shirt-text-large,
+        .shirt-text-medium,
+        .shirt-text-small,
+        .shirt-text-x-large {
+            font-size: 10px;
+            position: absolute;
+        }
+
+        .shirt-text-x-large {
+            top: 18px;
+            left: 20px;
+        }
+
+        .shirt-text-large {
+            top: 7px;
+            left: 20px;
+        }
+
+        .shirt-text-medium {
+            top: 5px;
+            left: 15px;
+        }
+
+        .shirt-text-small {
+            top: 6px;
+            left: 12px;
+        }
+
+        .icon-large,
+        .icon-medium,
+        .icon-small,
+        .icon-x-large {
+            line-height: 25px;
+        }
+
+        .icon-x-large {
+            font-size: 37px;
+            margin: 0;
+        }
+
+        .icon-large {
+            font-size: 32px;
+        }
+
+        .icon-medium {
+            font-size: 27px;
+        }
+
+        .icon-small {
+            font-size: 22px;
+        }
+
+        &:hover div.shirt-sizes {
+            opacity: 1;
+            top: -206px;
+            z-index: 5;
+        }
+
+        div.shirt-sizes {
+            border: 3px solid $color;
+            background: #fff;
+            width: 70px;
+            position: absolute;
+            opacity: 0;
+            top: -226px;
+            left: -8px;
+            z-index: -1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .triangle {
+            line-height: 30px;
+            list-style: none;
+
+            span.white-triangle-shirt-sizes {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 11px 9.5px 0 9.5px;
+                border-color: #fff transparent transparent transparent;
+                position: absolute;
+                z-index: 1;
+                bottom: -10px;
+                left: 23px;
+            }
+
+            span.blue-triangle-shirt-sizes {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 13px 10.5px 0 10.5px;
+                border-color: #5ca3d6 transparent transparent transparent;
+                position: absolute;
+                bottom: -15px;
+                left: 22px;
+            }
+        }
+    }
+
+    .square {
+        width: 30px;
+        height: 30px;
+
+        &.blue {
+            background: #82BBE4;
+        }
+
+        &.pink {
+            background: #d583ac;
+        }
+
+        &.yellow {
+            background: #deb17e;
+        }
+
+        &.green {
+            background: #8bb992;
+        }
+
+        &.navy {
+            background: #000080;
+        }
+
+        &.maroon {
+            background: #800000;
+        }
+
+        &.cyan {
+            background: #00ffff;
+        }
+
+        &.canary-yellow {
+            background: #ffef00;
+        }
+
+        &.lavender {
+            background: #B57EDC;
+        }
+
+        &.seafoam-green {
+            background: #71EEB8;
+        }
+
+        &.bright-green {
+            background: #33FF46;
+        }
+
+        &.eggplant {
+            background: #581845;
+        }
+
+        &.orange {
+            background: #FF5733;
+        }
+
+        &.bright-pink {
+            background: #FF33B2;
+        }
+    }
+}
